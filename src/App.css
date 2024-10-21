@@ -28,6 +28,45 @@
   color: #61dafb;
 }
 
+.header {
+
+  color: blue;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-right: 150px;
+  margin-left: 80px;
+}
+@keyframes Rainbow {
+  0% {color: #001F3F;}
+  25% {color:blueviolet;}
+  50% {colour:green;}
+  75% {colour:orange;}
+  100% {color: #c71007;}
+
+}
+.slogan {
+
+  animation: Rainbow 5s infinite;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-right: 150px;
+  margin-left: 80px;
+ 
+}
+
+.Flag {
+  opacity: 1;
+  transition: opacity 300ms ease-in;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-right: 150px;
+  margin-left: 60px;
+}
+
+.Input_Div {
+  margin-left: 80px;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
