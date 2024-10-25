@@ -4,7 +4,9 @@ function Correct() {
     return (
     <div>
 
-      <p>You are correct!!</p>
+      <p>
+      
+        You are correct!!</p>
     
     </div>
 

@@ -1,5 +1,5 @@
 <svg> 
-    <france alt='france'>./Images/France.jpg</france>
+    <france alt='france'>'./Images/France.jpg'</france>
         <germany>./Images/Germany.jpg</germany>
     
     </svg>

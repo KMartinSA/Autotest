@@ -1,14 +1,16 @@
-function Correct() {
+function Wrong() {
 
     
     return (
     <div>
 
-      <p>You are correct!!</p>
+      <p>
+       
+        You are Incorrect!!</p>
     
     </div>
 
 
     );
   }
-  export default Correct;
+  export default Wrong;

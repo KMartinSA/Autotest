@@ -39,9 +39,9 @@ function App() {
   const [isCorrect, setIsCorrect] = useState(null);
 
   const handleSubmit = (e) => {
-    const answerIsCorrect = countryValue === randomObject.value.toLowerCase();
+    const answerIsCorrect = countryValue.toLowerCase() === randomObject.value.toLowerCase();
     setIsCorrect(answerIsCorrect);
-    console.log(countryValue, randomObject.value.toLowerCase(), countryValue === randomObject.value.toLowerCase());
+    console.log(countryValue, randomObject.value.toLowerCase(), countryValue.toLowerCase() === randomObject.value.toLowerCase());
   };
 
 
