@@ -32,18 +32,18 @@ function App() {
   const [countryValue,setCountryValue] = useState ('');
   const [isCorrect, setIsCorrect] = useState(null);
 
-  const handleSubmit = () => {
-    const answerIsCorrect = countryValue.toLowerCase() === randomObject.value.toLowerCase();
+  const handleSubmit = (e) => {
+    const answerIsCorrect = countryValue === randomObject.value.toLowerCase();
     setIsCorrect(answerIsCorrect);
     console.log(countryValue, randomObject.value.toLowerCase(), countryValue === randomObject.value.toLowerCase());
   };
-  
+
   return (
     <div className='Input_Form'>
       <Header/>
       <img src={randomObject.src} className="Flag" alt={randomObject.value} />
-      <label classname='Country_Label'> Country Name: </label>
-      <input classname='Country_Input'placeholder='Type here' value={countryValue} onChange = {(e) => setCountryValue(e.target.value)}></input>
+      <label className='Country_Label'> Country Name: </label>
+      <input className='Country_Input'placeholder='Type here' value={countryValue} onChange = {(e) => setCountryValue(e.target.value)}></input>
       <p> You have put {countryValue}</p>
       <button onClick={handleSubmit} className='Submit'>
         Submit
