@@ -7,7 +7,7 @@
 
 How well do you know your flags? This app created in React is a fun way to learn the flags of the world!! You will see as above an image of randomly picked flag and you just need to enter the matching country, then press submit and voila you will see if you are correct or not. 
 
-<h2 align="center" color="Blue">Get Started</h2>
+<h2 align="center">Get Started</h2>
 
 ### Prerequisite:
 
@@ -30,7 +30,9 @@ You can also use other npm commands like test, build and eject please read furth
 
 <h2 align="center" color="Blue"> 💻 Creating the App</h2>
 
-For this app I used standard coding practise of
+For this app I used standard coding practise of creating simplied function names, using all my classnames in the camelcase that is a better pratise when using Javascript. All the different section are borkwn down for a reader to clearly establish each function of a code partition and well indented for clarity. Please see image below as an example:
+
+
 
 
 
@@ -54,13 +56,19 @@ Testing in this manner mean that we could see the errors as we are building the 
 
 
 
-Where are testing that you can see the title, image and submit boxes here. One test failed on...
+Where are testing that you can see the title, slogan, Input label and submit boxes here. One test failed on...getting the new logo to be discovered by the alt text at first as I was trying to add it it in the header 1 <h1> tag. As below:
 
-We resolved that test by changing...
+
+
+We resolved that test by adding it to the actual imag tag aand then it could discover the alt tag in this component. As featured below:
+
+
+
 
 <h2 align="center" color="Blue"> 📇 Manual Testing via Excel</h2>
 
-For manual testing I created a simple test case scenario with Excel that you can see below that just checks for most of the components in the app being displayed:
+For manual testing I created a simple test case scenario with Excel that you can see below that just checks for most of the components in the app being displayed. Then a few to check functionality. We cover any manual testing for any scenario that the jest testing may not of been covered, giving the appp more test coverage. This is done to ensure less defects would be found in later development or testing. 
+
 
 
 
@@ -80,6 +88,9 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
+<h2 align="center">🧮 Code Management: Git Project </h2>
+
+To manage my tasks on this project I have been using Git Project, creating issues for each task, with an appropriate label then 
 
 ### Learn More
 
