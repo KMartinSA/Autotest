@@ -4,8 +4,8 @@ function Wrong(props) {
     return (
     <div>
 
-      <p>
-      You have put {props.countryValue} &&
+      <p className='wrongResults'>
+      You have put {props.countryValue} <br/>
         You are Incorrect!!</p>
     
     </div>

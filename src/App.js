@@ -47,19 +47,22 @@ function App() {
 
 
   return (
-  <div className= 'App'>
+  <div className= 'app'>
     <Header/>
-    <img src={randomObject.src} className="Flags" alt={randomObject.value} />
+    <img src={randomObject.src} className="flagImage" alt={randomObject.value} />
     <br></br>
-    <label aria-labelledby='countryname' className='Country_Label'> Country Name: </label>    
-    <input className='Country_Input' id='countryname' name='countryname' placeholder='Type here' value={countryValue} onChange = {(e) => setCountryValue(e.target.value)}></input>
+    <label aria-labelledby='countryname' className='countryLabel'> Country Name: </label>    
+    <input className='countryInput' id='countryname' name='countryname' placeholder='Type here' value={countryValue} onChange = {(e) => setCountryValue(e.target.value)}></input>
      
       <button onClick={handleSubmit} className='Submit' role='btn'>
         Submit
       </button>
 
+  
+
       {isCorrect !== null && (
         <p className='Result_Message'>
+          <p>You have put {countryValue}</p>
           {isCorrect ? <Correct/>: <Wrong/>}
         </p>
       )}

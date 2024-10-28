@@ -3,7 +3,7 @@ import App from './App';
 
 test('Title', () => {
   render(<App />);
-  const txtElement = screen.getByText(/FlagXpedia/i);
+  const txtElement = screen.getByAltText('logo');
   expect(txtElement).toBeInTheDocument();
 });
 test('Header Slogan', () => {

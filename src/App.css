@@ -1,4 +1,4 @@
-.App {
+.app {
   text-align: center;
   background-image: url("./Images/WorldMap7.jpg");
   
@@ -17,9 +17,9 @@
 
 
 @keyframes Rainbow {
-  0% {color: #bbc70d;}
-  25% {color:blueviolet;}
-  50% {colour:green;}
+  0% {color: green}
+  25% {color:greenyellow}
+  50% {colour:gold;}
   75% {colour:orange;}
   100% {color: #c71007;}
 
@@ -29,13 +29,17 @@
   animation: Rainbow 5s infinite;
   margin-top: 10px;
   margin-bottom: 20px;
-  margin-right: 150px;
-  margin-left: 80px;
-  opacity:1;
+  margin-right: 2000px;
+  margin-left: 480px;
+  opacity:0.6;
+  background-color: rgb(22, 3, 129);
+  background-size: 10px;
+  width:350px;
+  text-align: center;
  
 }
 
-.Flags {
+.flagImage {
 
   animation: Rainbow 5s infinite;
   margin-top: 10px;
@@ -46,11 +50,23 @@
  
 }
 
-.Country_Label {
+.countryLabel {
   color:white;
   margin-top: 40px;
   margin-bottom: 100px;
   margin-right: 10px;
   margin-left: 60px;
   opacity:1;
+}
+
+.correctResults 
+
+{ color:white;
+
+}
+
+.wrongResults 
+
+{ color:white;
+
 }

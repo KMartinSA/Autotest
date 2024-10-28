@@ -4,8 +4,8 @@ function Correct({countryValue}) {
     return (
     <div>
 
-      <p>
-        You have put {countryValue} &&
+      <p className='correctResults'>
+        You have put {countryValue} <br/>
         You are correct!!</p>
     
     </div>
