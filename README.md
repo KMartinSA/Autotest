@@ -1,5 +1,5 @@
 
-<span style="color:blue">*FlagXpedia* text</span>
+<span style="color:blue">#FlagXpedia text</span>
 
 
 
