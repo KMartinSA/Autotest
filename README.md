@@ -18,6 +18,7 @@ To manage my tasks on this project I have been using Git Project, creating issue
 
 You would need to have Node.js installed please see link here:  for both windows and Mac
 Then you need to have Git bash installed (if not already via another application): 
+
 Install an IDE like Visual Studio Code: 
 
 After you have those installed please clone above repo with
@@ -49,6 +50,7 @@ For testing we used an inbuilt testing functioanly of REACT called Jest that is 
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
+
 ### TDD Testing
 Testing in this manner mean that we could see the errors as we are building the application, that is a forward approach to testing. Please see some of the tests below:
 
@@ -63,6 +65,7 @@ Where are testing that you can see the title, slogan, Input label and submit box
 ![Fail1](https://github.com/user-attachments/assets/70193424-de5e-45c3-9d4b-2a996939ca29)
 
 ![Fail2](https://github.com/user-attachments/assets/00cf3274-936d-4742-9ca2-5d110d5d7aa8)
+  
 We resolved that test by adding it to the actual image tag aand then it could discover the alt tag in this component. As featured below:
 
 ![CodePass](https://github.com/user-attachments/assets/1c32e148-4022-4bc6-a975-ab86db01fb95)
@@ -74,13 +77,6 @@ We resolved that test by adding it to the actual image tag aand then it could di
 For manual testing I created a simple test case scenario with Excel that you can see below that just checks for most of the components in the app being displayed. Then a few to check functionality. We cover any manual testing for any scenario that the jest testing may not of been covered, giving the appp more test coverage. This is done to ensure less defects would be found in later development or testing:
 ![Manual Testing - App](https://github.com/user-attachments/assets/e31c6ebe-0440-4928-a060-795602d67053)
 
-
-
-
-
-
-
-
 <h2 align="center" color="Blue"> 🖱️ Deployment of App </h2>
 
 `npm run build`
@@ -91,10 +87,7 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
-
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-
 
 ### Learn More
 
