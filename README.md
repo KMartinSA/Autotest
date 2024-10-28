@@ -58,7 +58,7 @@ Testing in this manner mean that we could see the errors as we are building the 
 ![App TDD Tests - Formative](https://github.com/user-attachments/assets/349a352c-0d92-4c23-8b5a-c2e4b49443a7)
 
 
-Where are testing that you can see the title, slogan, Input label and submit boxes here. One test failed on...getting the new logo to be discovered by the alt text at first as I was trying to add it it in the header 1 <h1> tag. As below:
+Where are testing that you can see the title, slogan, Input label and submit boxes here. One test failed on...getting the new logo to be discovered by the alt text at first as I was trying to add it it in the header 1 tag. As below:
 
 ![CodeFail](https://github.com/user-attachments/assets/c750788a-7766-4822-924a-90644bb2b910) 
 
@@ -66,7 +66,8 @@ Where are testing that you can see the title, slogan, Input label and submit box
 
 ![Fail2](https://github.com/user-attachments/assets/00cf3274-936d-4742-9ca2-5d110d5d7aa8)
   
-We resolved that test by adding it to the actual image tag aand then it could discover the alt tag in this component. As featured below:
+We resolved that test by adding it to the actual image tag and then it could discover the alt tag in this component. \
+As featured below:
 
 ![CodePass](https://github.com/user-attachments/assets/1c32e148-4022-4bc6-a975-ab86db01fb95)
 
