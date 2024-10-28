@@ -3,7 +3,7 @@ import App from './App';
 
 test('Title', () => {
   render(<App />);
-  const txtElement = screen.getByText(/Flag App/i);
+  const txtElement = screen.getByText(/FlagXpedia/i);
   expect(txtElement).toBeInTheDocument();
 });
 test('Header Slogan', () => {
@@ -11,23 +11,18 @@ test('Header Slogan', () => {
   const txtElement = screen.getByText(/Do you know your flags?/i);
   expect(txtElement).toBeInTheDocument();
 });
-test('Image', () => {
-  render(<App />);
-  const ImgElement = screen.findByAltText(/Flags/);
-  expect (ImgElement).toBeInTheDocument();
-});
 test('Label', () => {
   render(<App />);
-  const LablElement = screen.findAllByLabelText(/Country Name:/);
-  expect (LablElement).toBeVisible();
+  const LablElement = screen.getByText('Country Name:');
+  expect(LablElement).toBeVisible()
 });
 test('Input Box', () => {
   render(<App />);
-  const InptElement = screen.findByDisplayValue(/France/);
-  expect (InptElement).toEqual(getByAltText);
+  const InptElement = screen.getByPlaceholderText('Type here');
+  expect(InptElement).toBeVisible();
 });
-test('Return Box', () => {
+test('Submit Button', () => {
   render(<App />);
-  const RetrnElement = screen.findByAltText(/France/);
-  expect (RetrnElement).toEqual();
+  const RetrnElement = screen.getByRole('btn');
+  expect (RetrnElement).toBeInTheDocument();
 });

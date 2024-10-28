@@ -47,13 +47,14 @@ function App() {
 
 
   return (
-  <div className= 'Form'>
+  <div className= 'App'>
     <Header/>
     <img src={randomObject.src} className="Flags" alt={randomObject.value} />
-    <label className='Country_Label'> Country Name: </label>    
-    <input className='Country_Input'placeholder='Type here' value={countryValue} onChange = {(e) => setCountryValue(e.target.value)}></input>
-      <p> You have put {countryValue}</p>
-      <button onClick={handleSubmit} className='Submit'>
+    <br></br>
+    <label aria-labelledby='countryname' className='Country_Label'> Country Name: </label>    
+    <input className='Country_Input' id='countryname' name='countryname' placeholder='Type here' value={countryValue} onChange = {(e) => setCountryValue(e.target.value)}></input>
+     
+      <button onClick={handleSubmit} className='Submit' role='btn'>
         Submit
       </button>
 
