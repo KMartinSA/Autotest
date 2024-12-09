@@ -30,7 +30,7 @@
   margin-top: 10px;
   margin-bottom: 20px;
   margin-right: 2000px;
-  margin-left: 480px;
+  margin-left: 750px;
   opacity:0.9;
   background-color: rgb(22, 3, 129);
   background-size: 10px;
@@ -55,11 +55,12 @@
   color:coral;
   font-size: 1.6rem;
   background-color: rgb(22, 3, 129);
+  opacity:0.9;
   width:150px;
   margin-top: 10px;
   margin-bottom: 20px;
   margin-right: 2000px;
-  margin-left: 480px;
+  margin-left: 750px;
 }
 
 .countryLabel {

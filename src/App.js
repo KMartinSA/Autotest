@@ -83,7 +83,7 @@ function App() {
     <Flags/>
     <form onSubmit={handleSubmit}>
     <label alt-text='countryName' className='countryLabel'> Country Name: </label>    
-    <input name='countryName'/>      
+    <input name='countryName' placeholder='Type here'/>      
     <button disabled={isButtonDisabled} type='submit' className='submitButton' role='submit-btn'>
         Submit
       </button>

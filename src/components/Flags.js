@@ -8,7 +8,7 @@ function Flags(randomObject) {
 
       <p>
 
-      <img src={randomObject.src} className="Flags" alt={randomObject.value} /></p>
+      <img src={randomObject.src} className="flagImage" alt={randomObject.value} /></p>
     
     </div>
 
