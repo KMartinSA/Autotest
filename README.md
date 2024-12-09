@@ -1,4 +1,4 @@
-<h1 align="center">🧮 FlagXpedia </h1>
+<h1 align="center"> ✈️ FlagXpedia </h1>
 
 ![AppScreenshot](https://github.com/user-attachments/assets/feb8ae19-d214-44a5-a66c-cb8386436a11)
 
