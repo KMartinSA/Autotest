@@ -1,8 +1,29 @@
 <h1 align="center"> ✈️ FlagXpedia </h1>
 
+###Figure 1. Main Page
 ![AppScreenshot](https://github.com/user-attachments/assets/feb8ae19-d214-44a5-a66c-cb8386436a11)
 
-How well do you know your flags? This app created in React is a fun way to learn the flags of the world!! You will see as above an image of randomly picked flag and you just need to enter the matching country, then press submit and voila you will see if you are correct or not. 
+How well do you know your flags? This app created in React is a fun way to learn the flags of the world!! As you can see in the image (Figure 1) above that the app randomly picks an image of flag with the country as its value. 
+All you need to do is add the matching country inot the input and click submit. Then the app will tell you if you are correct or not. Once you have clicked next the submit button is disabled so you can only submit once. 
+###Figure 2. Correct Div
+
+
+Shows the correct response
+###Figure 3. Wrong Div
+
+
+Shows the wrong response
+###Figure 4. Next Button
+
+
+Question counter has been increased by one. Submit button is disabled to prevent multiple submits. 
+###Figure 5. Start New Quiz
+
+This resets all the counters to be zero, so you can start the quiz again.
+###Figure 6. Resets Quiz after 10 questions have been submitted
+
+
+
 
 <h2 align="center">🧮 Code Management: Git Project </h2>
 
@@ -12,7 +33,7 @@ To manage my tasks on this project I have been using Git Project, creating issue
 
 <h2 align="center">Get Started</h2>
 
-### Prerequisite:
+### Initial Set Up:
 
 You would need to have Node.js installed please see link here:  for both windows and Mac
 Then you need to have Git bash installed (if not already via another application): 
