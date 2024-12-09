@@ -1,12 +1,13 @@
-function Wrong(props) {
 
-    
+function Wrong() {
+
+   
     return (
     <div>
 
       <p className='wrongResults'>
-      You have put {props.countryValue} <br/>
-        You are Incorrect!!</p>
+        You are Incorrect!! &#128532; </p>
+       
     
     </div>
 

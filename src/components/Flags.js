@@ -1,6 +1,6 @@
 import flags from './FlagImages.js';
 
-function Flags() {
+function Flags(randomObject) {
 
     var randomObject = flags[Math.floor(Math.random() * flags.length)];
     return (

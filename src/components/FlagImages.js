@@ -78,7 +78,11 @@ const flags = [
     {src:scotland, value:'Scotland'},
     {src:sweden, value: 'Sweden'},
     {src:trinidadandtobago, value:'Trinidad and Tobago'},
+
+   
  
   
   ];
- export default flags
+
+ 
+ export default flags;

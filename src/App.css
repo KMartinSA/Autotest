@@ -31,7 +31,7 @@
   margin-bottom: 20px;
   margin-right: 2000px;
   margin-left: 480px;
-  opacity:0.6;
+  opacity:0.9;
   background-color: rgb(22, 3, 129);
   background-size: 10px;
   width:350px;
@@ -47,7 +47,19 @@
   margin-right: 150px;
   margin-left: 80px;
   opacity:1;
- 
+  
+}
+
+.flagCounter {
+
+  color:coral;
+  font-size: 1.6rem;
+  background-color: rgb(22, 3, 129);
+  width:150px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-right: 2000px;
+  margin-left: 480px;
 }
 
 .countryLabel {
@@ -59,15 +71,57 @@
   opacity:1;
 }
 
+.submitButton
+{ 
+  background-color: white;
+  color:coral;
+  border-radius: 8px;
+}
+
+.submitButton:disabled
+{ 
+  background-color: grey;
+  color:grey;
+  border-radius: 8px;
+}
+
+
+.nextButton
+{ 
+  background-color: white;
+  color:coral;
+  border-radius: 8px;
+
+}
+.restartQuiz
+{ 
+  background-color: white;
+  color:coral;
+  border-radius: 8px;
+}
+
 .correctResults 
 
-{ color:white;
+{ 
+  
+  color:green;
+  top: 0;
+  font-size: 1.6rem;
 
 }
 
 .wrongResults 
 
-{ color:white;
-
+{  
+  color:red;
+  top: 0;
+  font-size: 1.6rem;
 }
 
+.resultMessage {
+  
+  color:white;
+  top: 0;
+  font-size: 1.6rem;
+
+}

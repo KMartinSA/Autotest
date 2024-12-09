@@ -1,17 +1,13 @@
 
+function Correct() {
 
-function Correct({countryValue}) {
-
- 
-    
-
+  
     return (
     <div>
      
       <p className='correctResults'>
-        You have put {countryValue} <br/>
-        You have are correct! </p>
-    
+        
+        You are correct!! &#128522;</p>
     </div>
 
 

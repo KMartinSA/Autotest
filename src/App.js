@@ -4,10 +4,12 @@ import Flags from './components/Flags.js'
 import Correct from './components/Correct.js'
 import Wrong from './components/Wrong.js'
 import { useState } from 'react';
-import flags from './components/FlagImages.js';
+
 
 
 function App() {
+
+  const flagValue = 'Germany';
 
   const [countryValue,setCountryValue] = useState ('');
   const [isCorrect, setIsCorrect] = useState(null);
@@ -22,15 +24,21 @@ function App() {
 
   const handleSubmit = (e) => {
 
-    //Function to see if your answer is correct or not
-   const answerIsCorrect = countryValue.toLowerCase() === Flags.length;
-   setIsCorrect(answerIsCorrect);
+    e.preventDefault();
+    
+  //Function to get the input from the form below
+  const { countryName } = e.target;
+  setCountryValue(countryName.value);
+
+  //Function to see if your answer is correct or not
+   const answerIsCorrect = countryValue === flagValue;
+    setIsCorrect(answerIsCorrect);
     //Add the counter to what question you are on
     setCounter (counter + 1);
     setClickCounter (clickCounter + 1);
     setButtonDisabled(true);
     
-      
+    
     
     
 
@@ -44,8 +52,8 @@ function App() {
     setCorrectResults (correctCounter + 1)
    }
 
-
-    //console.log(countryValue, Flags.value(), countryValue.toLowerCase() === Flags.value());
+   
+    console.log(countryValue,flagValue, countryValue.toLowerCase() === 'Germany');
   };
 
   const nextQuestion = () => {
@@ -65,48 +73,44 @@ function App() {
 
   }
 
-
-  
-
-
-
   return (
   <div className= 'app'>
     
     <Header/>
-
-    <br></br>
-    <p alt-text='flagCounter' className='flagCounter'>Flag {counter}</p>
-    <Flags key={flags.src} {...flags}/>;
-    <br></br>
-    <label aria-labelledby='countryname' className='countryLabel'> Country Name: </label>    
-    <input className='countryInput' id='countryname' name='countryname' placeholder='Type here' value={countryValue} onChange = {(e) => setCountryValue(e.target.value)}></input>
-     
-      <button disabled={isButtonDisabled} onClick={handleSubmit} className='Submit' role='btn'>
+    <p alt-text='flagCounter' className='flagCounter'>Flag {counter}
+    
+    </p>
+    <Flags/>
+    <form onSubmit={handleSubmit}>
+    <label alt-text='countryName' className='countryLabel'> Country Name: </label>    
+    <input name='countryName'/>      
+    <button disabled={isButtonDisabled} type='submit' className='submitButton' role='submit-btn'>
         Submit
       </button>
-      <button onClick={nextQuestion} className='nextQuestion' role='btn'>
+    
+      </form>
+
+      <button onClick={nextQuestion} className='nextButton' role='next-btn'>
         Next
       </button>
-
-      
-
+    
       {isCorrect !== null && (
         <p className='resultMessage'>
-          <p> 
-             You are on Question {counter} <br/>
-             Your answer is {countryValue} <br/>
-             You have answered {correctCounter}/{counter} correctly
-             You have submitted {clickCounter}
+            
+            Your answer is {countryValue} <br/>
+            {isCorrect ? <Correct {...flagValue}/>: <Wrong/>}
+          <p>
+             You have answered {correctCounter}/{counter} correctly <br/>
+             You have submitted {clickCounter} questions
           </p>
-          {isCorrect ? <Correct/>: <Wrong/>}
-        
         </p>
 
 
       )}
 
-    <button onClick={startNewQuiz} className='restartQuiz' role='btn'>
+      
+
+    <button onClick={startNewQuiz} className='restartQuiz' role='start-new-quiz-btn'>
       Start New Quiz
     </button>
 
