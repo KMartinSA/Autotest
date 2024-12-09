@@ -1,33 +1,63 @@
-import { getByAltText, render, screen } from '@testing-library/react';
-import App from './App';
+import { render, screen } from '@testing-library/react';
+import App from './App.js';
+import Headers from './components/Headers.js';
 
-test('Title', () => {
-  render(<App />);
-  const txtElement = screen.getByText(/Flag App/i);
-  expect(txtElement).toBeInTheDocument();
+
+describe('Jest smoke test', () => { 
+  it('tests that Jest is working', () => { 
+      expect(2+2).toBe(4); 
+  });
 });
-test('Header Slogan', () => {
-  render(<App />);
-  const txtElement = screen.getByText(/Do you know your flags?/i);
-  expect(txtElement).toBeInTheDocument();
+
+describe('tests Header', () => {
+  it('tests Title', () => {
+  render (<Headers/>);
+    const txtElement = screen.getByAltText('logo');
+    expect(txtElement).toBeInTheDocument();
+  });
+  it('tests Header Slogan', () => {
+    render (<Headers/>);
+    const txtElement = screen.getByText(/Do you know your flags?/i);
+    expect(txtElement).toBeInTheDocument();;
+  });
 });
-test('Image', () => {
-  render(<App />);
-  const ImgElement = screen.findByAltText(/Flags/);
-  expect (ImgElement).toBeInTheDocument();
-});
-test('Label', () => {
-  render(<App />);
-  const LablElement = screen.findAllByLabelText(/Country Name:/);
-  expect (LablElement).toBeVisible();
-});
-test('Input Box', () => {
-  render(<App />);
-  const InptElement = screen.findByDisplayValue(/France/);
-  expect (InptElement).toEqual(getByAltText);
-});
-test('Return Box', () => {
-  render(<App />);
-  const RetrnElement = screen.findByAltText(/France/);
-  expect (RetrnElement).toEqual();
+
+describe('tests App Elements', () => {
+  it('tests Label', () => {
+    render (<App/>);
+  const LablElement = screen.getByText('Country Name:');
+  expect(LablElement).toBeVisible()
+  });
+  it('tests Input Box', () => {
+    render (<App/>);
+    const InptElement = screen.getByPlaceholderText('Type here');
+    expect(InptElement).toBeVisible();
+  });
+  it('tests Submit Button', () => {
+    render (<App/>);
+  const submitElement = screen.getByRole('submit-btn');
+  expect (submitElement).toBeInTheDocument();
+  });
+  it('tests Next Button', () => {
+    render (<App/>);
+  const nextElement = screen.getByRole('next-btn');
+  expect (nextElement).toBeInTheDocument();
+  });
+  it('tests Start Again Button', () => {
+    render (<App/>);
+  const startAgainElement = screen.getByRole('start-new-quiz-btn');
+  expect (startAgainElement).toBeInTheDocument();
+
+
+
+  });
+
+
+
+ 
+
+
+
+
+
 });

@@ -1,12 +1,13 @@
+
 function Wrong() {
 
-    
+   
     return (
     <div>
 
-      <p>
+      <p className='wrongResults'>
+        You are Incorrect!! &#128532; </p>
        
-        You are Incorrect!!</p>
     
     </div>
 
