@@ -1,6 +1,4 @@
-<p align="center">
-    <img width="400" src="https://github.com/user-attachments/assets/5480f772-29aa-4c80-9588-802b3cb7bcd1" alt="FlagXpedia Logo">
-</p>
+<h1 align="center">🧮 FlagXpedia </h1>
 
 ![AppScreenshot](https://github.com/user-attachments/assets/feb8ae19-d214-44a5-a66c-cb8386436a11)
 
