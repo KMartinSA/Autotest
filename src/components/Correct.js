@@ -1,13 +1,13 @@
+
 function Correct() {
 
-    
+  
     return (
     <div>
-
-      <p>
-      
-        You are correct!!</p>
-    
+     
+      <p className='correctResults'>
+        
+        You are correct!! &#128522;</p>
     </div>
 
 
