@@ -1,6 +1,6 @@
 import './App.css';
 import Header from './components/Headers.js'
-import Flags from './components/Flags.js'
+import helper_flags from './components/helper_flags.js'
 import Correct from './components/Correct.js'
 import Wrong from './components/Wrong.js'
 import { useState } from 'react';
@@ -9,110 +9,52 @@ import { useState } from 'react';
 
 function App() {
 
-  const flagValue = 'Germany';
-
+  
   const [countryValue,setCountryValue] = useState ('');
   const [isCorrect, setIsCorrect] = useState(null);
+  const [randomFlag, setRandomFlag] = useState(helper_flags()); // Call the helper function for the first flag
 
-  // Enable and Disable the button
-  const [isButtonDisabled, setButtonDisabled] = useState (false);
-  
- //All the counters to collect correct answers and how many questions
-  const [counter, setCounter] = useState (1);
-  const [clickCounter, setClickCounter] = useState (0);
-  const [correctCounter, setCorrectResults] = useState(0);
 
   const handleSubmit = (e) => {
-
     e.preventDefault();
-    
-  //Function to get the input from the form below
-  const { countryName } = e.target;
-  setCountryValue(countryName.value);
-
-  //Function to see if your answer is correct or not
-   const answerIsCorrect = countryValue === flagValue;
-    setIsCorrect(answerIsCorrect);
-    //Add the counter to what question you are on
-    setCounter (counter + 1);
-    setClickCounter (clickCounter + 1);
-    setButtonDisabled(true);
-    
-    
-    
-    
-
-    //After 10 clicks resets the counter
-   if (counter > 9) {
-    setCounter(1) 
-    setCorrectResults(0)
-   }
-
-   if (answerIsCorrect===true) {
-    setCorrectResults (correctCounter + 1)
-   }
-
-   
-    console.log(countryValue,flagValue, countryValue.toLowerCase() === 'Germany');
+    const isAnswerCorrect = countryValue.trim().toLowerCase() === randomFlag.value.toLowerCase();
+    setIsCorrect(isAnswerCorrect);
   };
-
+ 
+ 
   const nextQuestion = () => {
-    <Flags/>
+    setRandomFlag(helper_flags()); // Get a new random flag
     setIsCorrect(null);
-    setButtonDisabled(false);
-    
-  }
-
-  const startNewQuiz = () => {
-    <Flags/>
-    setCounter(1) ;
-    setCorrectResults(0);
-    setIsCorrect(null);
-    setButtonDisabled(false);
-    
-
-  }
+    setCountryValue('');
+  };
+ 
 
   return (
   <div className= 'app'>
     
     <Header/>
-    <p alt-text='flagCounter' className='flagCounter'>Flag {counter}
+       {/* Render the random flag */}
+       {randomFlag && (
+       <img src={randomFlag.src} className="flagImage" alt={`Flag of ${randomFlag.value}`} />
+     )}
     
-    </p>
-    <Flags/>
     <form onSubmit={handleSubmit}>
-    <label alt-text='countryName' className='countryLabel'> Country Name: </label>    
-    <input name='countryName' placeholder='Type here'/>      
-    <button disabled={isButtonDisabled} type='submit' className='submitButton' role='submit-btn'>
-        Submit
-      </button>
-    
-      </form>
-
-      <button onClick={nextQuestion} className='nextButton' role='next-btn'>
-        Next
-      </button>
-    
-      {isCorrect !== null && (
-        <p className='resultMessage'>
-            
-            Your answer is {countryValue} <br/>
-            {isCorrect ? <Correct {...flagValue}/>: <Wrong/>}
-          <p>
-             You have answered {correctCounter}/{counter} correctly <br/>
-             You have submitted {clickCounter} questions
-          </p>
-        </p>
-
-
-      )}
-
+       <label>Country Name:</label>
+       <input
+         placeholder="Type here"
+         value={countryValue}
+         onChange={(e) => setCountryValue(e.target.value)}
+       />
+       <button type="submit">Submit</button>
+     </form>
+     {isCorrect !== null && (
+       <p>
+         {isCorrect ? <Correct /> : <Wrong />}
+       </p>
+     )}
+     <button onClick={nextQuestion}>Next</button>
       
-
-    <button onClick={startNewQuiz} className='restartQuiz' role='start-new-quiz-btn'>
-      Start New Quiz
-    </button>
+    
 
   </div>
   );
