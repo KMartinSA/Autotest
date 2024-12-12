@@ -39,20 +39,20 @@ function App() {
      )}
     
     <form onSubmit={handleSubmit}>
-       <label>Country Name:</label>
+       <label className='countryLabel'>Country Name:</label>
        <input
          placeholder="Type here"
          value={countryValue}
          onChange={(e) => setCountryValue(e.target.value)}
        />
-       <button type="submit">Submit</button>
+       <button className='submitButton' type="submit">Submit</button>
      </form>
      {isCorrect !== null && (
        <p>
          {isCorrect ? <Correct /> : <Wrong />}
        </p>
      )}
-     <button onClick={nextQuestion}>Next</button>
+     <button className='nextButton' onClick={nextQuestion}>Next</button>
       
     
 
