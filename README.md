@@ -172,8 +172,9 @@ Snapshots will visualize the actual logic of the application for instance if you
 For manual testing, I created a simple test case scenario with Excel that you can see below that just checks for most of the components in the app being displayed. Then a few to check functionality. Manual testing can be longer than automated testing but could find defects that a machine would not be able to detect, for instance, decisions that are made in functionality, and workflows. I will use manual testing as an end to test for my application. 
 
 
-### Figure 18. Manual testing 1
+### Figure 18. Manual Testing
 
+![Manual Tests](https://github.com/user-attachments/assets/3fcc785f-7616-4d7f-87aa-3a767288b8e4)
 
 
 <h2 align="center" color="Blue"> 🖱️ Accessibility </h2>
