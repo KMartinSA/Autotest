@@ -12,11 +12,11 @@ All you need to do is add the matching country into the input and click submit. 
 ![Correct Response](https://github.com/user-attachments/assets/17cee054-9056-4764-b90e-f6e1a1270886)
 
 Shows the correct response if you add in the correct Country Name that matches the flag
-### Figure 3. Wrong Div
+### Figure 3. Wrong Response
 
 ![Wrong Response](https://github.com/user-attachments/assets/108db682-8c87-4da5-8bd1-42718a47d301)
 
-Shows the wrong response if you add in the incorrect Country Name that matches the flag
+Shows the wrong response if you add in the incorrect Country Name that does not match the flag
 ### Figure 4. Next Button
 ![After Pressing Next button](https://github.com/user-attachments/assets/7f599a4f-af8b-4ab7-a7af-eec8b5799490)
 
@@ -24,7 +24,7 @@ After you have submitted your previous answer, you can click the next button to 
 
 <h2 align="center">🧮 Code Management: Git Project </h2>
 
-To manage my tasks on this project I have been using Git Project, creating issues for each task, with an appropriate label, then assigning them to someone. Using a Kanban board we can track the progress of those tickets by whether they are ready, in progress, being reviewed, or in the Done column. The tasks should be appropriately broken down into sensible reasonable chunks of coding. For example adding one feature like a submit form, fixing a bug, or improving code for full audit transparency of the work in progress.
+To manage my tasks on this project I have been using Git Project, creating issues for each task, with an appropriate label, and then assigning them to someone. Using a Kanban board we can track the progress of those tickets by whether they are ready, in progress, being reviewed, or in the Done column. The tasks should be appropriately broken down into sensible reasonable chunks of coding. For example adding one feature like a submit form, fixing a bug, or improving code for full audit transparency of the work in progress.
 
 ### Figure 5. Git Project Board
 ![GitProject](https://github.com/user-attachments/assets/a0500657-a074-465a-a7ad-dd5bf49b3bf6)
@@ -34,7 +34,7 @@ To manage my tasks on this project I have been using Git Project, creating issue
 
 
 ## Code Review
-One essential part of the tasks is having another person assess your code, this is known as another form of testing called static testing. Asking for peer reviews is just as important as testing, these peer reviews are really useful for instance feedback on your code, for instance having names for elements or stored variables that are clear and make sense to another developer. Testing on this format can find what can be referred to as "code smells" where your code is using bad practices but doesn't fail on compiling or in any functionality. 
+One essential part of the tasks is having another person assess your code, this is known as another form of testing called static testing. Asking for peer reviews is just as important as testing, these peer reviews are really useful for instance feedback on your code, for instance having names for elements or stored variables that are clear and make sense to another developer. Testing on this format can find what can be referred to as "code smells" where your code is using bad practices but doesn't fail in compiling or in any functionality. 
 
 ### Figure 7. Code Review
 
@@ -44,6 +44,9 @@ One essential part of the tasks is having another person assess your code, this 
 
 ### Figure 8. Version Control - Commit Branch in Visual Studio Codes
 
+### Figure 9. Merge Conflicts Readme
+
+### Figure 10. Merge Conflict Resolved
 
 Please see the Code Review of suggestions on changing the code name
 
