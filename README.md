@@ -2,27 +2,25 @@
 
 ### Figure 1. Main Page
 
-
-
-
-
+![Home Page](https://github.com/user-attachments/assets/880778c5-b17a-4312-b7f8-2725cfbfe6f9)
 
 How well do you know your flags? This app created in React is a fun way to learn the flags of the world!! As you can see in the image (Figure 1) above, the app randomly picks an image of a flag with the country as its value. 
 All you need to do is add the matching country into the input and click submit. Then the app will tell you if you are correct or not. Once you have clicked next the submit button is disabled so you can only submit once. 
 
-### Figure 2. Correct Div
+### Figure 2. Correct Response
 
+![Correct Response](https://github.com/user-attachments/assets/17cee054-9056-4764-b90e-f6e1a1270886)
 
-Shows the correct response
+Shows the correct response if you add in the correct Country Name that matches the flag
 ### Figure 3. Wrong Div
 
+![Wrong Response](https://github.com/user-attachments/assets/108db682-8c87-4da5-8bd1-42718a47d301)
 
-Shows the wrong response
+Shows the wrong response if you add in the incorrect Country Name that matches the flag
 ### Figure 4. Next Button
+![After Pressing Next button](https://github.com/user-attachments/assets/7f599a4f-af8b-4ab7-a7af-eec8b5799490)
 
-
-
-After you have submitted your previous answer, you can click the next button to show you the next flag and clears the previous results
+After you have submitted your previous answer, you can click the next button to show you the next flag and clear the previous results.
 
 <h2 align="center">🧮 Code Management: Git Project </h2>
 
@@ -32,13 +30,19 @@ To manage my tasks on this project I have been using Git Project, creating issue
 ![GitProject](https://github.com/user-attachments/assets/a0500657-a074-465a-a7ad-dd5bf49b3bf6)
 
 
-### Figure 6. The task with Pull Request aligned 
+### Figure 6. Accessibility with Pull Request aligned 
 
 
 ## Code Review
 One essential part of the tasks is having another person assess your code, this is known as another form of testing called static testing. Asking for peer reviews is just as important as testing, these peer reviews are really useful for instance feedback on your code, for instance having names for elements or stored variables that are clear and make sense to another developer. Testing on this format can find what can be referred to as "code smells" where your code is using bad practices but doesn't fail on compiling or in any functionality. 
 
 ### Figure 7. Code Review
+
+
+## Version Control
+
+
+### Figure 8. Version Control - Commit Branch in Visual Studio Codes
 
 
 Please see the Code Review of suggestions on changing the code name
@@ -164,23 +168,19 @@ For manual testing, I created a simple test case scenario with Excel that you ca
 
 <h2 align="center" color="Blue"> 🖱️ Accessibility </h2>
 
-Accessibility is very important in any application that is built for individuals who are either visually or orally impaired. One part of this is to label every element with an alt-text, aria-label, or role that is fit for its type. The labeling of these elements means that any software can read the elements of the page to an end user. Alongside this I needed to check that contrasting colors are done so can still be seen by someone visually impaired. 
-
-
-
-
-### Figure 17. Alt-text Labelling
-
-
+Accessibility is very important in any application that is built for individuals who are either visually or orally impaired. One part of this is to label every element with an alt-text, aria-label, or role that is fit for its type. The labelling of these elements means that any software can read the elements of the page to an end user. Alongside this I needed to check that contrasting colors were done so could still be seen by someone visually impaired. 
 
 ### Figure 18. Lighthouse Accessibility Check
 
+![Accessibility Results at 92%](https://github.com/user-attachments/assets/cb325ba2-6497-44e2-9a56-cf3bc70fb0b4)
 
+### Figure 19. Fixes to Pass Accessibility: Changed color for better contrasting
 
-### Figure 19. Fixes to Pass Accessibility
+![Accessibility Fix from Coral to a Dark blue](https://github.com/user-attachments/assets/0dc781ec-ec37-4a2d-a715-478aa1891af1)
 
+### Figure 20. Accessibility Passes
 
-
+![Accessibility Results at 100%](https://github.com/user-attachments/assets/b4bec218-7a75-4c60-96e1-ea424e947edd)
 
 <h2 align="center" color="Blue"> 🖱️ Deployment of App </h2>
 
