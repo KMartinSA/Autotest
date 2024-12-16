@@ -4,6 +4,13 @@
   
 }
 
+.mainBody {
+
+  text-align: center;
+  align-items: center;
+
+}
+
 .header {
 
   color: white;
@@ -13,6 +20,8 @@
   margin-left: 120px;
   padding: 20px;
   font: arial;
+  
+  
 }
 
 
@@ -27,15 +36,17 @@
 .slogan {
 
   animation: Rainbow 5s infinite;
-  margin-top: 10px;
-  margin-bottom: 20px;
-  margin-right: 1500px;
-  margin-left: 580px;
+
   opacity:0.9;
   background-color: rgb(22, 3, 129);
   background-size: 10px;
   width:350px;
   text-align: center;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  margin-right: 100px;
+  margin-left: 320px;
+  padding: 20px;
  
 }
 
@@ -75,8 +86,16 @@
 .submitButton
 { 
   background-color: white;
-  color:coral;
+  color: rgb(2, 2, 59);
   border-radius: 8px;
+}
+
+.nextButton
+{ 
+  background-color: white;
+  color: rgb(2, 2, 59);
+  border-radius: 8px;
+
 }
 
 .submitButton:disabled
@@ -86,14 +105,6 @@
   border-radius: 8px;
 }
 
-
-.nextButton
-{ 
-  background-color: white;
-  color:coral;
-  border-radius: 8px;
-
-}
 .restartQuiz
 { 
   background-color: white;
