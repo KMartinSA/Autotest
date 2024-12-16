@@ -2,69 +2,85 @@
 
 ### Figure 1. Main Page
 
-
-
-
-
+![Home Page](https://github.com/user-attachments/assets/880778c5-b17a-4312-b7f8-2725cfbfe6f9)
 
 How well do you know your flags? This app created in React is a fun way to learn the flags of the world!! As you can see in the image (Figure 1) above, the app randomly picks an image of a flag with the country as its value. 
 All you need to do is add the matching country into the input and click submit. Then the app will tell you if you are correct or not. Once you have clicked next the submit button is disabled so you can only submit once. 
 
-### Figure 2. Correct Div
+### Figure 2. Correct Response
 
+![Correct Response](https://github.com/user-attachments/assets/17cee054-9056-4764-b90e-f6e1a1270886)
 
-Shows the correct response
-### Figure 3. Wrong Div
+Shows the correct response if you add in the correct Country Name that matches the flag
+### Figure 3. Wrong Response
 
+![Wrong Response](https://github.com/user-attachments/assets/108db682-8c87-4da5-8bd1-42718a47d301)
 
-Shows the wrong response
+Shows the wrong response if you add in the incorrect Country Name that does not match the flag
 ### Figure 4. Next Button
+![After Pressing Next button](https://github.com/user-attachments/assets/7f599a4f-af8b-4ab7-a7af-eec8b5799490)
 
-
-
-After you have submitted your previous answer, you can click the next button to show you the next flag and clears the previous results
+After you have submitted your previous answer, you can click the next button to show you the next flag and clear the previous results.
 
 <h2 align="center">🧮 Code Management: Git Project </h2>
 
-To manage my tasks on this project I have been using Git Project, creating issues for each task, with an appropriate label, then assigning them to someone. Using a Kanban board we can track the progress of those tickets by whether they are ready, in progress, being reviewed, or in the Done column. The tasks should be appropriately broken down into sensible reasonable chunks of coding. For example adding one feature like a submit form, fixing a bug, or improving code for full audit transparency of the work in progress.
+To manage my tasks on this project I have been using Git Project, creating issues for each task, with an appropriate label, and then assigning them to someone. Using a Kanban board we can track the progress of those tickets by whether they are ready, in progress, being reviewed, or in the Done column. The tasks should be appropriately broken down into sensible reasonable chunks of coding. For example adding one feature like a submit form, fixing a bug, or improving code for full audit transparency of the work in progress.
 
 ### Figure 5. Git Project Board
 ![GitProject](https://github.com/user-attachments/assets/a0500657-a074-465a-a7ad-dd5bf49b3bf6)
 
 
-### Figure 6. The task with Pull Request aligned 
+### Figure 6. Accessibility with Pull Request aligned 
 
+![Pull Request connected to issue](https://github.com/user-attachments/assets/06dc9d6f-aa94-404a-b5d9-d0dd71056df7)
 
 ## Code Review
-One essential part of the tasks is having another person assess your code, this is known as another form of testing called static testing. Asking for peer reviews is just as important as testing, these peer reviews are really useful for instance feedback on your code, for instance having names for elements or stored variables that are clear and make sense to another developer. Testing on this format can find what can be referred to as "code smells" where your code is using bad practices but doesn't fail on compiling or in any functionality. 
+One essential part of the tasks is having another person assess your code, this is known as another form of testing called static testing. Asking for peer reviews is just as important as testing, these peer reviews are really useful for instance feedback on your code, for instance having names for elements or stored variables that are clear and make sense to another developer. Testing on this format can find what can be referred to as "code smells" where your code is using bad practices but doesn't fail in compiling or any functionality. 
 
 ### Figure 7. Code Review
 
+![Code Review](https://github.com/user-attachments/assets/a1c267f7-5c3b-4f0a-baa4-d872e99d130c)
+
+
+## Version Control
+A good reason why we use GitHub as a tool to save our code other than it is open source and free, is that it comes with a version control built in. Subsequently, this means that every change to your code is recorded for auditing purposes. Therefore if someone submitted code that broke a live system or another functionality due to a dependency. Version controls give all developers an easy way to roll back to the latest working version. As there is normally more than one developer working on the same repository, conflicts can emerge. When you process a merge into the main/default branch then GitHub compares all the changes. When GitHub detects two lines of code with different changes it creates a merge conflict. Hence a developer has to manually tell Github which version of code is to be selected. 
+
+### Figure 8. Version Control - Commit Branch in Visual Studio Codes
+
+![Version Control](https://github.com/user-attachments/assets/fcf24d6a-02bc-4778-af12-301c2ad4da06)
+
+### Figure 9. Merge Conflicts Readme
+
+### Figure 10. Merge Conflict Resolved
 
 Please see the Code Review of suggestions on changing the code name
 
 <h2 align="center" color="Blue"> 💻 Creating the App: Code Practise</h2>
 
 For this app I used the standard coding practice of creating simplified function names, using all my classnames in camelcase which is a better practice when using Javascript. 
-All the different sections are broken down for a reader to establish each function of a code partition and well indented for clarity. Please see the image below as an example:
+All the different sections are broken down for a reader to establish each function of a code partition and well indented for clarity. 
 
+### Figure 11. Classname in camel case for Correct Result
 
-### Figure 9.1. Classname in camel case for submitButtion
-
-
+![ClassName of Correct Result](https://github.com/user-attachments/assets/d13eddb6-6b14-4f01-8260-385197be2861)
 
 As you can see in this image I have used the first word in lowercase and the second word as a capital letter for the first letter (submitButton), with no spaces as Javascript doesn't like spaces between text unless it's set as a string. 
 
-### Figure 9.2. Matching CSS in submitButton
+### Figure 12. Matching CSS in Colour Result
 
-
+![Matching CSS of Correct Results](https://github.com/user-attachments/assets/422168da-4b3d-46ad-bac3-070f0a31e6de)
 
 In this image, I have set some styling of the submit button to make it a lot nicer and stand out against the darker background, I have rounded the buttons so they don't seem as formal. 
 
-### Figure 10.1. Const names for Country Value
+### Figure 13. Const names for Country Value
+![Const Names](https://github.com/user-attachments/assets/3c4c3760-1996-4079-9051-ce7a9aa4d4da)
+
+### Figure 14. Const names used in a form
+
+![Const name used in form](https://github.com/user-attachments/assets/75a4f418-b369-44ea-840e-aef4a45a3f38)
 
 
-To set the country value we have created a variable (const) where the country name that is added to the input is added into this variable of countryValue
+To set the country value I have created a variable (const) where the country name that is added to the input is added into this variable of countryValue
 
 <h2 align="center"> ⏰ Get Started: Running the App</h2>
 
@@ -111,29 +127,29 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 Testing in this manner means that I could see the errors as I am building the application, that is a forward approach to testing. 
 
 
-### Figure 11. Smoke Test (Jest)
+### Figure 15. Smoke Test (Jest)
 
 ![Jest Smoke Test](https://github.com/user-attachments/assets/4e3c7b04-6fe1-4562-ace8-20d0d9f1ee54)
 
 This will just check that Jest is installed in our node modules by using a simple mathematics equation
-### Figure 12.1. React DOM tests
-![React DOM Tests](https://github.com/user-attachments/assets/e5ab441c-0c0b-40bb-9eb8-f7a422f06ac6)
+### Figure 16.1. React DOM tests
 
 
 
-### Figure 12.2. React DOM Failure - Placeholder Text
+
+### Figure 16.2. React DOM Failure - Placeholder Text
 ![React DOM Tests Failure](https://github.com/user-attachments/assets/fb90b93c-aed1-4c04-98b9-0a807f4acf5e)
 
 ![React DOM Tests Failure Reason](https://github.com/user-attachments/assets/06ef4d19-b22c-4115-9479-8fc0d14f2c3e)
 
 
 
-### Figure 12.3. React DOM Failure Fix
+### Figure 16.3. React DOM Failure Fix
 ![React DOM Tests Failure Fix](https://github.com/user-attachments/assets/129ff47d-61eb-4dd9-b003-5a81713f08da)
 
 
 
-### Figure 12.4. React DOM Passes
+### Figure 16.4. React DOM Passes
 ![React DOM Tests Passed](https://github.com/user-attachments/assets/1bf7a2b8-a462-4427-9773-fd092e00313f)
 
 
@@ -144,7 +160,7 @@ This will just check that Jest is installed in our node modules by using a simpl
 
 
 
-### Figure 14. Snapshots
+### Figure 17. Snapshots
 
 
 
@@ -153,34 +169,31 @@ Snapshots will visualize the actual logic of the application for instance if you
 
 <h2 align="center" color="Blue"> 📇 Manual Testing via Excel</h2>
 
-For manual testing, I created a simple test case scenario with Excel that you can see below that just checks for most of the components in the app being displayed. Then a few to check functionality. I cover any manual testing for any scenario that the jest testing may not have been covered, giving the app more test coverage. This is done to ensure fewer defects would be found in later development or testing:
+For manual testing, I created a simple test case scenario with Excel that you can see below that just checks for most of the components in the app being displayed. Then a few to check functionality. Manual testing can be longer than automated testing but could find defects that a machine would not be able to detect, for instance, decisions that are made in functionality, and workflows. I will use manual testing as an end to test for my application. 
 
 
-### Figure 15. Manual testing 1
+### Figure 18. Manual Testing
 
-
-### Figure 16. Manual testing 2
+![Manual Tests](https://github.com/user-attachments/assets/3fcc785f-7616-4d7f-87aa-3a767288b8e4)
 
 
 <h2 align="center" color="Blue"> 🖱️ Accessibility </h2>
 
-Accessibility is very important in any application that is built for individuals who are either visually or orally impaired. One part of this is to label every element with an alt-text, aria-label, or role that is fit for its type. The labeling of these elements means that any software can read the elements of the page to an end user. Alongside this I needed to check that contrasting colors are done so can still be seen by someone visually impaired. 
+Accessibility is very important in any application that is built for individuals who are either visually or orally impaired.
+Most speech recognition software would be able to recognise HTML elements, for instance, if you have <input> in your code, most accessibility will read out the elements and text. 
+An alternative way for unrecognisable elements is you label every element with an alt-text, aria-label, or role that is fit for its type. Alongside this I needed to check that contrasting colours were done so could still be seen by someone visually impaired. For testing accessibility for my app, I have used Lighthouse which is a built-in functionality in Google Chrome. It does a lot of automatic accessibility but it has limited functionality so you may need to cover extra accessibility testing manually.  
 
+### Figure 19. Lighthouse Accessibility Check
 
+![Accessibility Results at 92%](https://github.com/user-attachments/assets/cb325ba2-6497-44e2-9a56-cf3bc70fb0b4)
 
+### Figure 20. Fixes to Pass Accessibility: Changed colour for better contrasting
 
-### Figure 17. Alt-text Labelling
+![Accessibility Fix from Coral to a Dark blue](https://github.com/user-attachments/assets/0dc781ec-ec37-4a2d-a715-478aa1891af1)
 
+### Figure 21. Accessibility Passes
 
-
-### Figure 18. Lighthouse Accessibility Check
-
-
-
-### Figure 19. Fixes to Pass Accessibility
-
-
-
+![Accessibility Results at 100%](https://github.com/user-attachments/assets/b4bec218-7a75-4c60-96e1-ea424e947edd)
 
 <h2 align="center" color="Blue"> 🖱️ Deployment of App </h2>
 

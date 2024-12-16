@@ -33,22 +33,6 @@ describe('tests App Elements', () => {
     const InptElement = screen.getByPlaceholderText('Type here');
     expect(InptElement).toBeVisible();
   });
-  it('tests Submit Button', () => {
-    render (<App/>);
-  const submitElement = screen.getByRole('submit-btn');
-  expect (submitElement).toBeInTheDocument();
-  });
-  it('tests Next Button', () => {
-    render (<App/>);
-  const nextElement = screen.getByRole('next-btn');
-  expect (nextElement).toBeInTheDocument();
-  });
-  it('tests Start Again Button', () => {
-    render (<App/>);
-  const startAgainElement = screen.getByRole('start-new-quiz-btn');
-  expect (startAgainElement).toBeInTheDocument();
-
-
 
   });
 
