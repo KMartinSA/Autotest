@@ -2,12 +2,12 @@ import { render, screen } from '@testing-library/react';
 import App from './App.js';
 import Headers from './components/Headers.js';
 
-
 describe('Jest smoke test', () => { 
   it('tests that Jest is working', () => { 
       expect(2+2).toBe(4); 
   });
 });
+
 
 describe('tests Header', () => {
   it('tests Title', () => {
@@ -33,15 +33,16 @@ describe('tests App Elements', () => {
     const InptElement = screen.getByPlaceholderText('Type here');
     expect(InptElement).toBeVisible();
   });
-
+  it('tests Submit Button', () => {
+    render (<App/>);
+    const txtElement = screen.getByText('Submit');
+    expect(txtElement).toBeInTheDocument();;
   });
-
-
-
- 
-
-
-
+  it('tests Next Button', () => {
+    render (<App/>);
+    const txtElement = screen.getByText('Next');
+    expect(txtElement).toBeInTheDocument();;
+  });
 
 
 });
