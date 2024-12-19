@@ -15,6 +15,7 @@ function App() {
   const [randomFlag, setRandomFlag] = useState(helper_flags()); // Call the helper function for the first flag
 
 
+
   const handleSubmit = (e) => {
     e.preventDefault();
     const isAnswerCorrect = countryValue.trim().toLowerCase() === randomFlag.value.toLowerCase();
@@ -39,9 +40,11 @@ function App() {
      )}
     
     <form onSubmit={handleSubmit}>
-       <label className='countryLabel'>Country Name:</label>
+       <label className='countryLabel' role="name">Country Name:</label>
        <input
+        data-testid="input-email"
          placeholder="Type here"
+         name="name"
          value={countryValue}
          onChange={(e) => setCountryValue(e.target.value)}
        />

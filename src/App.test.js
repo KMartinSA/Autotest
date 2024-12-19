@@ -1,6 +1,6 @@
-import { render, screen } from '@testing-library/react';
 import App from './App.js';
 import Headers from './components/Headers.js';
+import {render, fireEvent, screen, getByLabelText, userEvent} from '@testing-library/react'
 
 describe('Jest smoke test', () => { 
   it('tests that Jest is working', () => { 
@@ -43,6 +43,17 @@ describe('tests App Elements', () => {
     const txtElement = screen.getByText('Next');
     expect(txtElement).toBeInTheDocument();;
   });
+
+  describe('Test return', () => { 
+    it('tests that Jest is working', async () => { 
+      render (<App/>);
+      const field = screen.getByRole('name').querySelector('input')
+        fireEvent.focus(field,{ target: {value: 'Italy'}}) 
+        expect((field)).tohaveValue('Italy')
+
+    });
+  });
+  
 
 
 });
