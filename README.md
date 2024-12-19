@@ -1,3 +1,5 @@
+[![codecov](https://codecov.io/gh/KMartinSA/Autotest/graph/badge.svg?token=9QRIRJRT3Q)](https://codecov.io/gh/KMartinSA/Autotest)
+
 <h1 align="center"> ✈️ FlagXpedia </h1>
 
 ### Figure 1. Main Page
@@ -25,6 +27,7 @@ After you have submitted your previous answer, you can click the next button to 
 <h2 align="center">🧮 Code Management: Git Project </h2>
 
 To manage my tasks on this project I have been using Git Project, creating issues for each task, with an appropriate label, and then assigning them to someone. Using a Kanban board we can track the progress of those tickets by whether they are ready, in progress, being reviewed, or in the Done column. The tasks should be appropriately broken down into sensible reasonable chunks of coding. For example adding one feature like a submit form, fixing a bug, or improving code for full audit transparency of the work in progress.
+
 
 ### Figure 5. Git Project Board
 ![GitProject](https://github.com/user-attachments/assets/a0500657-a074-465a-a7ad-dd5bf49b3bf6)
