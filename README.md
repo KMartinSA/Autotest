@@ -211,13 +211,17 @@ You can see in Figure 20 I have Netlify set up with two sets of environments
 Here is an image of my Prod branch
 ### Figure 22. Netlify Development Branch
 
-
-
 In this image, you can see some of the changes I am working on, with the new counters added
+
+You may have noticed that I have a couple of badges on the top of this page. 
+The other is to show the status of my Netlify deployment.
 
 ## Coverage
 
-You may have noticed that I have a couple of badges on the top of this page. One is to show how much code has been tested in an application.
+The other badge shows how much code has been tested in an application. 
+For the code coverage, I have used a software tool called CodeVac, connected my code to this website
+It scans your code, and tests, and works out how much of the code is referenced in your tests. 
+With this software, you can use the analysis to look for gaps in your testing.
 
 ### Figure 23. Coverage Table 
 
