@@ -1,4 +1,5 @@
 [![codecov](https://codecov.io/gh/KMartinSA/Autotest/graph/badge.svg?token=9QRIRJRT3Q)](https://codecov.io/gh/KMartinSA/Autotest)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ea9ce03a-42a6-4dc7-a849-4b48a08ffd42/deploy-status)](https://app.netlify.com/sites/soft-kitten-3a1ff4/deploys)
 
 <h1 align="center"> ✈️ FlagXpedia </h1>
 
