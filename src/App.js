@@ -40,7 +40,7 @@ function App() {
      )}
     
     <form onSubmit={handleSubmit}>
-       <label className='countryLabel' role="name">Country Name:</label>
+       <label className='countryLabel' >Country Name:</label>
        <input
         data-testid="input-email"
          placeholder="Type here"
