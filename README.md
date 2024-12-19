@@ -1,4 +1,5 @@
 [![codecov](https://codecov.io/gh/KMartinSA/Autotest/graph/badge.svg?token=9QRIRJRT3Q)](https://codecov.io/gh/KMartinSA/Autotest)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ea9ce03a-42a6-4dc7-a849-4b48a08ffd42/deploy-status)](https://app.netlify.com/sites/soft-kitten-3a1ff4/deploys)
 
 <h1 align="center"> ✈️ FlagXpedia </h1>
 
@@ -186,6 +187,7 @@ Accessibility is very important in any application that is built for individuals
 Most speech recognition software would be able to recognise HTML elements, for instance, if you have <input> in your code, most accessibility will read out the elements and text. 
 An alternative way for unrecognisable elements is you label every element with an alt-text, aria-label, or role that is fit for its type. Alongside this I needed to check that contrasting colours were done so could still be seen by someone visually impaired. For testing accessibility for my app, I have used Lighthouse which is a built-in functionality in Google Chrome. It does a lot of automatic accessibility but it has limited functionality so you may need to cover extra accessibility testing manually.  
 
+[Manual Test Log](https://nchlondonacuk-my.sharepoint.com/:x:/g/personal/km3366a_nulondon1_onmicrosoft_com/EXlBmKqpo-xKlq407Xf6p0MBHqx1T1K1bXlrn7GBxVmwVg?e=ut297H)
 ### Figure 19. Lighthouse Accessibility Check
 
 ![Accessibility Results at 92%](https://github.com/user-attachments/assets/cb325ba2-6497-44e2-9a56-cf3bc70fb0b4)
