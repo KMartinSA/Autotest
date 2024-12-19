@@ -57,11 +57,12 @@ A good reason why we use GitHub as a tool to save our code other than it is open
 
 ![Merge Conflicts from pulling into local branch](https://github.com/user-attachments/assets/a91617f7-3d2e-442e-a1d0-82819046b0d2)
 
-
+In this image, you can see there was a merge conflict between different versions of test react library. Github detected in the two branches that there are two different versions
 ### Figure 10. Merge Conflict Resolved
 
 ![Merge Conflict resolved](https://github.com/user-attachments/assets/3d7c4f43-a802-4e7d-a85a-8eae4a3576e1)
 
+I resolved the merge conflict by clicking on allow incoming change as I was pulling from the main branch into  my local branch. Then this meant branches were using the correct version of test react.
 
 Please see the Code Review of suggestions on changing the code name
 
@@ -160,13 +161,20 @@ Snapshots would visualize the actual logic of the application for instance, if y
 
 <h2 align="center" color="Blue"> 📇 Manual Testing via Excel</h2>
 
-For manual testing, I created a simple test case scenario with Excel that checks for most of the components in the app being displayed. Then a few to check functionality. Manual testing can be longer than automated testing but could find defects that a machine would not be able to detect, for instance, decisions that are made in functionality, and workflows. I will use manual testing as an end-to-end test for my application. 
+For manual testing, I created a simple test case scenario with Excel that checks for most of the components in the app being displayed. Then a few to check functionality. Manual testing can be longer than automated testing but could find defects that a machine would not be able to detect, for instance, decisions that are made in functionality, and workflows. I will use manual testing as an end-to-end test for my application. The logic behind the results can not be automatically tested in this scenario hence why it was useful to implement manual testing. 
 
 
-### Figure 18. Manual Testing
+### Figure 18. Manual Testing 1
 
-![Manual Tests](https://github.com/user-attachments/assets/3fcc785f-7616-4d7f-87aa-3a767288b8e4)
+![Manual Tests 1](https://github.com/user-attachments/assets/eadd9fce-c62f-448c-977d-e956ca4ed6e3)
 
+
+### Figure 18. Manual Testing 2
+
+![Manual Tests 2](https://github.com/user-attachments/assets/ea1a672d-6f58-419a-88d0-c289251fb448)
+
+
+As you can from my tests some functionality failed. Once I had fixed this functionality I had to re-test it again.
 
 <h2 align="center" color="Blue"> 🖱️ Accessibility </h2>
 
@@ -210,6 +218,9 @@ You can see in Figure 20 I have Netlify set up with two sets of environments
 
 Here is an image of my Prod branch
 ### Figure 22. Netlify Development Branch
+
+![Netlify Dev branch - new Slogan](https://github.com/user-attachments/assets/7a6279fd-0716-44de-9a31-8fdf27adbfbd)
+
 
 In this image, you can see some of the changes I am working on, with the new counters added
 
