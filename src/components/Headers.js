@@ -1,10 +1,13 @@
+import logo from '../Images/FlagXpediaLogo4.PNG'
+
 function Headers() {
     return (
-    <div>
-      <h1 className='header'>Flag App</h1>  
+    <div classname='mainBody'>
+      <h1 className='header'><img src={logo} alt='logo' /></h1>  
         <h2 className='slogan'>Do you know your flags? </h2>
     </div>
     );
   }
 
   export default Headers;
+  
