@@ -38,6 +38,8 @@ function App() {
        {randomFlag && (
        <img src={randomFlag.src} className="flagImage" alt={`Flag of ${randomFlag.value}`} />
      )}
+
+     <p className="flagExplore">Lets Explore some Flags!!</p>
     
     <form onSubmit={handleSubmit}>
        <label className='countryLabel' >Country Name:</label>
