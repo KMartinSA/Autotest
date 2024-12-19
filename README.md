@@ -55,7 +55,13 @@ A good reason why we use GitHub as a tool to save our code other than it is open
 
 ### Figure 9. Merge Conflicts Readme
 
+![Merge Conflicts from pulling into local branch](https://github.com/user-attachments/assets/a91617f7-3d2e-442e-a1d0-82819046b0d2)
+
+
 ### Figure 10. Merge Conflict Resolved
+
+![Merge Conflict resolved](https://github.com/user-attachments/assets/3d7c4f43-a802-4e7d-a85a-8eae4a3576e1)
+
 
 Please see the Code Review of suggestions on changing the code name
 
@@ -107,20 +113,18 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes. You may also see any lint errors in the console.
 
-You can also use other npm commands like test, build, and eject if you don't mind reading further on those.
+You can also use other npm commands to test, build, and eject if you don't mind reading further on those.
 
 <h2 align="center" color="Blue"> ⚛️ Testing the App </h2>
 
-Testing for any application is vital to make sure that all the elements of the app are viewed, and usable and that any functionality works as expected. There are various forms of testing approaches that we can use in this instance that are listed as different versions of hats (time stuff). In this instance, I have started with using a blue hat and looking at what I am testing and why. I am testing the code, functionality, accessibility, and app elements, as this is a small app I am not looking at security, performance, or stress testing currently. The next step is white hat testing which looks at the tools and resources I need for testing, as this is a react app. I can utilize some of the built-in libraries to cover all our testing with JEST and react-dom snapshots, and for accessibility, I will use Lighthouse which is a built-in tool of Chrome. 
+Testing for any application is vital to ensure that all the elements of the app are viewed, and usable and that any functionality works as expected. There are various testing approaches that we can use in this instance there are methods listed as different versions of hats (timestuff n.d.). In this instance, I have started using a blue hat method by looking at what I am testing and why. I am testing the code, functionality, accessibility, and app elements, as this is a small app I am not looking at security, performance, or stress testing currently. The next step is white hat testing which looks at the tools and resources I need for testing, as this is a react app. I can utilize some of the built-in libraries to cover all our testing with JEST and react-dom snapshots and for accessibility. I will use Lighthouse which is a built-in tool of Chrome. 
  
-
-
-Two of the main methods you can implement testing with are either Automation or Manual, many places will still use both to cover all aspects.
+Two of the main methods for testing are Automation and manual testing. Many testers still use both to this day to cover more.  
 
 ### Automated Testing
-Automated testing is where you can use software or tools to do your testing, this can save a lot of time and effort compared to 
+Automated testing is where you can use software or tools to do your testing, this saves a lot of time and effort compared to manual testing. When testing is set up like this from the beginning of development it reduces the defects being raised, the amount of time fixing bugs and tech debt from increasing.
 
-Automating testing is REACT has an inbuilt testing functionality called Jest that uses the react-dom module to see if elements are the application as expected. The tests that are used are in a file called App.test.js, you can run it in the VSC terminal at any time with the following command:
+REACT has an inbuilt testing functionality called Jest that uses the react-dom module to see if elements are the application as expected. The tests that are used are in a file called App.test.js, you can run it in the VSC terminal at any time with the following command:
 
 `npm test`
 
@@ -128,52 +132,35 @@ Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### TDD Testing
-Testing in this manner means that I could see the errors as I am building the application, that is a forward approach to testing. 
-
+Testing in this manner means that I can forward develop, creating tests before I develop that would fail. Once you have built the element these tests will then pass.
 
 ### Figure 15. Smoke Test (Jest)
 
 ![Jest Smoke Test](https://github.com/user-attachments/assets/4e3c7b04-6fe1-4562-ace8-20d0d9f1ee54)
 
-This will just check that Jest is installed in our node modules by using a simple mathematics equation
+This will check that Jest is installed in our node modules by using a simple mathematics equation
 ### Figure 16.1. React DOM tests
-
-
-
 
 ### Figure 16.2. React DOM Failure - Placeholder Text
 ![React DOM Tests Failure](https://github.com/user-attachments/assets/fb90b93c-aed1-4c04-98b9-0a807f4acf5e)
 
 ![React DOM Tests Failure Reason](https://github.com/user-attachments/assets/06ef4d19-b22c-4115-9479-8fc0d14f2c3e)
 
-
-
 ### Figure 16.3. React DOM Failure Fix
 ![React DOM Tests Failure Fix](https://github.com/user-attachments/assets/129ff47d-61eb-4dd9-b003-5a81713f08da)
-
-
 
 ### Figure 16.4. React DOM Passes
 ![React DOM Tests Passed](https://github.com/user-attachments/assets/1bf7a2b8-a462-4427-9773-fd092e00313f)
 
+### Figure 17 Snapshot Depreciated
 
+![Snapshot Depreciator](https://github.com/user-attachments/assets/2a222d11-8d24-4153-a913-0105a9cffc8c)
 
-
-
-
-
-
-
-### Figure 17. Snapshots
-
-
-
-
-Snapshots will visualize the actual logic of the application for instance if you are expected to see 1 once you have started a new quiz this will be reflected in the application
+Snapshots would visualize the actual logic of the application for instance, if you were to add text for the flags then Snapshots can render that action and check for the outcome unfortunately, as this has been deprecated, all the learning for snapshots is outdated.
 
 <h2 align="center" color="Blue"> 📇 Manual Testing via Excel</h2>
 
-For manual testing, I created a simple test case scenario with Excel that you can see below that just checks for most of the components in the app being displayed. Then a few to check functionality. Manual testing can be longer than automated testing but could find defects that a machine would not be able to detect, for instance, decisions that are made in functionality, and workflows. I will use manual testing as an end to test for my application. 
+For manual testing, I created a simple test case scenario with Excel that checks for most of the components in the app being displayed. Then a few to check functionality. Manual testing can be longer than automated testing but could find defects that a machine would not be able to detect, for instance, decisions that are made in functionality, and workflows. I will use manual testing as an end-to-end test for my application. 
 
 
 ### Figure 18. Manual Testing
@@ -183,9 +170,9 @@ For manual testing, I created a simple test case scenario with Excel that you ca
 
 <h2 align="center" color="Blue"> 🖱️ Accessibility </h2>
 
-Accessibility is very important in any application that is built for individuals who are either visually or orally impaired.
+Accessibility is important in any application for individuals who are either visually or orally impaired.
 Most speech recognition software would be able to recognise HTML elements, for instance, if you have <input> in your code, most accessibility will read out the elements and text. 
-An alternative way for unrecognisable elements is you label every element with an alt-text, aria-label, or role that is fit for its type. Alongside this I needed to check that contrasting colours were done so could still be seen by someone visually impaired. For testing accessibility for my app, I have used Lighthouse which is a built-in functionality in Google Chrome. It does a lot of automatic accessibility but it has limited functionality so you may need to cover extra accessibility testing manually.  
+An alternative way for unrecognisable elements is to label every HTML element with an alt-text, aria-label, or role. Alongside, this I needed to check that contrasting colours were done so could still be seen by someone visually impaired. For testing accessibility for my app, I have used Lighthouse which is a built-in functionality in Google Chrome. It does a lot of automatic accessibility but it has limited functionality so you may need to cover extra accessibility testing manually.  
 
 [Manual Test Log](https://nchlondonacuk-my.sharepoint.com/:x:/g/personal/km3366a_nulondon1_onmicrosoft_com/EXlBmKqpo-xKlq407Xf6p0MBHqx1T1K1bXlrn7GBxVmwVg?e=ut297H)
 ### Figure 19. Lighthouse Accessibility Check
@@ -202,7 +189,48 @@ An alternative way for unrecognisable elements is you label every element with a
 
 <h2 align="center" color="Blue"> 🖱️ Deployment of App </h2>
 
-For deployment, we are using a technology called Netlify to deploy my build into separate environments that we can use for developing and testing purposes
+I am using Netlify to deploy my build into separate environments that I can use for development, this won't break the main application for users. 
+Netlify uses the node build module to create many online hosted environments. The environments are built from the code in my respiratory whenever I make code changes they get reflected in your environments. Netlify hosts my application online with a randomly changed DNS alternatively you can connect your DNS to this build.
+
+### Node JS Build Success
+
+![Build Success](https://github.com/user-attachments/assets/4557c67d-cef9-400d-b8f8-bb866ebdcd5e)
+
+
+From your GitHub, you can see if your node build has been successful. 
+### Figure 20. Netlify deployments
+
+![Netlify Deployments](https://github.com/user-attachments/assets/1cdd28bc-4775-4cc2-963e-74ba13221f67)
+
+
+You can see in Figure 20 I have Netlify set up with two sets of environments
+### Figure 21. Netlify Production Branch
+
+![Netlify - Production Build](https://github.com/user-attachments/assets/520c670a-1621-4ce8-ab3d-97338c99d962)
+
+Here is an image of my Prod branch
+### Figure 22. Netlify Development Branch
+
+
+
+In this image, you can see some of the changes I am working on, with the new counters added
+
+## Coverage
+
+You may have noticed that I have a couple of badges on the top of this page. One is to show how much code has been tested in an application.
+
+### Figure 23. Coverage Table 
+
+![Code Coverage - Test Results Table](https://github.com/user-attachments/assets/50ad09da-5277-41c8-9481-78e541ed7534)
+
+
+### Figure 24. Coverage Data
+
+![Code Coverage - Test Results](https://github.com/user-attachments/assets/4c7186ed-bc00-42bd-a0b7-452781d4e562)
+
+
+
+## Start Deployment
 
 `npm run build`
 
@@ -253,3 +281,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## References
+Timestuff, (N.d.). The 6 thinking hats of software. Timestuff [online]. https://testuff.com/wp-content/uploads/6-Thinking-Hats-and-Software-Testing.pdf (Accessed:16/12/24)
